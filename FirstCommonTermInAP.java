@@ -24,9 +24,9 @@ public class FirstCommonTermInAP {
 		for(int j = 0; j< 500; j++) {
 			i = (c*j - diff)/(a*1.0);
 			if(i - Math.floor(i) == 0)
-				break;	
+				break;
 		}
-			return (int)(b + a*i);
+		return (int)(b + a*i);
 	}
 		
 	public static void main(String[] args) {
