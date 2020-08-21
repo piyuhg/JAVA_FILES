@@ -1,4 +1,3 @@
-package for_lop;
 
 import java.util.Scanner;
 
