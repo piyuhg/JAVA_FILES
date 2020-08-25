@@ -2,26 +2,22 @@ import java.util.Scanner;
 
 public class SimpleInterest {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		Scanner scan = new Scanner(System.in);
 	
-		System.out.println("Enter your name \n");
-		String str = scan.nextLine();
-		
-		System.out.println("Hello " + str);
-		
-		char c = str.charAt(0);
-		
-		System.out.println(c);
-
-		int p = scan.nextInt();
-		int r = scan.nextInt();
-		int t = scan.nextInt();
-		int si = (p*r*t);
+	public static int simpleInterest(int p,int r,int t) {
+		int si = p*r*t/100;
+		int amount = p + si;
 		System.out.println(si);
+		return amount;
 		
+	}
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int p = s.nextInt();
+		int r = s.nextInt();
+		int t = s.nextInt();
+		int amount=simpleInterest(p,r,t);
+		System.out.println(amount);		
+
 	}
 
 }
